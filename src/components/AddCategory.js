@@ -13,7 +13,7 @@ export const AddCategory = ({setCategories}) => {
     e.preventDefault();
 
     if (inputValue.trim().length > 1) {
-      setCategories((cats) => [...cats, inputValue]); //cats => Callback que tiene el estado anterior
+      setCategories((cats) => [inputValue, ...cats]); //cats => Callback que tiene el estado anterior
       setinputValue('');
     }
   };
