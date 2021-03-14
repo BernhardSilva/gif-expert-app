@@ -1,24 +1,24 @@
 import React, { Fragment, useState } from 'react';
-import AddCategory from './AddCategory';
+import { AddCategory } from './AddCategory';
 
-const GifExpertApp = () => {
+export const GifExpertApp = () => {
 	// const categories = ['Hunter X', 'Samurai X', 'Shingeki no Kyojin'];
 
-	const [categories, setCagerories] = useState([
+	const [categories, setCategories] = useState([
 		'Hunter X',
 		'Samurai X',
 		'Shingeki no Kyojin',
 	]);
 
 	// const handleAdd = () => {
-	// 	// setCagerories([...categories, 'Dragon Ball ']);
-	// 	setCagerories((cats) => [...cats, 'Dragon Ball']);
+	// 	// setCategories([...categories, 'Dragon Ball ']);
+	// 	setCategories((cats) => [...cats, 'Dragon Ball']);
 	// };
 
 	return (
 		<Fragment>
 			<h2>GifExpertApp</h2>
-			<AddCategory></AddCategory>
+			<AddCategory setCategories={setCategories} />
 			<hr />
 
 			<ol>
@@ -29,5 +29,3 @@ const GifExpertApp = () => {
 		</Fragment>
 	);
 };
-
-export default GifExpertApp;
