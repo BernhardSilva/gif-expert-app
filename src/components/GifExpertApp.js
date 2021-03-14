@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 import {AddCategory} from './AddCategory';
 import {GifGrid} from './GifGrid';
 
@@ -8,8 +8,8 @@ export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['Shingeki no Kyojin']);
 
   return (
-    <Fragment>
-      <h2>GifExpertApp</h2>
+    <>
+      <h2>GifStuff</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
 
@@ -18,6 +18,6 @@ export const GifExpertApp = () => {
           <GifGrid key={category} category={category} />
         ))}
       </ol>
-    </Fragment>
+    </>
   );
 };
