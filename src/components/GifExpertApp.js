@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import AddCategory from './AddCategory';
 
 const GifExpertApp = () => {
 	// const categories = ['Hunter X', 'Samurai X', 'Shingeki no Kyojin'];
@@ -9,17 +10,16 @@ const GifExpertApp = () => {
 		'Shingeki no Kyojin',
 	]);
 
-	const handleAdd = () => {
-		// setCagerories([...categories, 'Dragon Ball ']);
-		setCagerories((cats) => [...cats, 'Dragon Ball']);
-	};
+	// const handleAdd = () => {
+	// 	// setCagerories([...categories, 'Dragon Ball ']);
+	// 	setCagerories((cats) => [...cats, 'Dragon Ball']);
+	// };
 
 	return (
 		<Fragment>
 			<h2>GifExpertApp</h2>
+			<AddCategory></AddCategory>
 			<hr />
-
-			<button onClick={handleAdd}>Agregar</button>
 
 			<ol>
 				{categories.map((category) => {
