@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -46,4 +47,12 @@ h3 {
 
 .card img {
   max-height: 170px;
+}
+
+.loader {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  width: 200px;
+  height: 200px;
 }
