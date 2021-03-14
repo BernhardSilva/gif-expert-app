@@ -1,14 +1,46 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 body {
-	padding: 60px;
+  padding: 60px;
 }
 
 input {
-	color: grey;
-	font-size: 1.2rem;
-	width: 100%;
+  color: grey;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+h3 {
+  padding-top: 20px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 170px;
 }
