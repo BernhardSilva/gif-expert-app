@@ -44,10 +44,20 @@ h3 {
 }
 
 .logo {
+}
+.logo-gifiexpert {
   margin-bottom: 30px;
   width: 100%;
   max-width: 400px;
   height: auto;
+}
+
+.giphy-message {
+  color: white;
+  position: absolute;
+  /* padding-right: 20vw; */
+  left: 1vh;
+  top: 2vh;
 }
 
 .card-grid {
