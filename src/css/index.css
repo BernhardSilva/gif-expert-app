@@ -9,8 +9,8 @@
 body {
   padding: 60px;
   background-image: url('../assets/background.jpg');
+  background-repeat: repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
