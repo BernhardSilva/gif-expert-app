@@ -9,8 +9,6 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      {/* <label className="giphy-message">Powered by Giphy</label>
-      <img className="logo" src={logo} alt="logo" /> */}
       <img className="logo-gifexpert" src={logoGifexpert} alt="logo-gifexpert" />
 
       <AddCategory setCategories={setCategories} />
