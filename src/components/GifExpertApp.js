@@ -4,8 +4,6 @@ import {GifGrid} from './GifGrid';
 import logo from '../assets/logo.png';
 
 export const GifExpertApp = () => {
-  // const categories = ['Hunter X', 'Samurai X', 'Shingeki no Kyojin'];
-
   const [categories, setCategories] = useState(['Shingeki no Kyojin']);
 
   return (
