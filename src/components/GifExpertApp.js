@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {AddCategory} from './AddCategory';
 import {GifGrid} from './GifGrid';
+import logo from '../assets/logo.png';
 
 export const GifExpertApp = () => {
   // const categories = ['Hunter X', 'Samurai X', 'Shingeki no Kyojin'];
@@ -9,9 +10,8 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <img className="logo" src={logo} alt="logo" />
       <AddCategory setCategories={setCategories} />
-      <hr />
 
       <ol>
         {categories.map((category) => (
